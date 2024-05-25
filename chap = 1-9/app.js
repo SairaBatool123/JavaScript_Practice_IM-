@@ -7,22 +7,21 @@ console.log("Hi EveryOne Saira Here");
 var rollNumber = "45";
 var RollNumber = "55";
 
-console.log("Roll: " + rollNumber);
+console.log("Roll: " , rollNumber); //45
 
 rollNumber = "56";
 // when you update ypur variable name or a value you don't menstion it there name just call with their name 
 
-console.log("Roll: " + rollNumber);
+console.log("Roll: " , rollNumber); //56
 
 // 3. Variable for string " "
-var rollNumber;
+var rollNumber; //jb tk value nhi
 console.log("Roll: ", rollNumber) //undefine
 
 rollNumber = "55";
-console.log("Roll: " + rollNumber);
-
+console.log("Roll: " , rollNumber);
 rollNumber = "56";
-console.log("Roll: " + rollNumber);
+console.log("Roll: " , rollNumber);
 
 // 4. 
 var firstName = "Saira ";
@@ -45,17 +44,17 @@ console.log("balance: ", balance);   //408
 // OR: Another example in js string change in number when calculation is applied on it'
 
 var balance = "420";
-console.log("balance: ", balance);   //420 (string: color change)
+console.log("balance: ", balance);   //420 as a text (string: color change)
 
 balance = balance - "12";  
-console.log("balance: ", balance);   //408
+console.log("balance: ", balance);   //408 as a number
 
 // OR:
 
 var balance = "420a";
 console.log("balance: ", balance);   //420a
 
-balance = balance - "12";  
+balance = balance - "12";  //420a to yeh number nhi hai
 console.log("balance: ", balance);   //NaN
 
 // OR:
@@ -65,6 +64,11 @@ console.log("balance: ", balance);   //420
 
 balance = balance + "12";  
 console.log("balance: ", balance);   //42012 (string: color change)
+
+const TOTAL = 45; //convention
+TOTAL = 50 ; //error constant does not change
+
+// Arithmetic Operator +,-,*,/,%
 
 // 6.
 // Simple Calculator for +,-,/,*
@@ -92,7 +96,7 @@ console.log("num2: ", num2); //5
 var num1 = 5;
 num1 = num1 + 1;
 // OR: 
-// num1++; //6
+// num1++; //6 also called unary operator
 console.log("num1: ", num1); //6
 
 // 9.
@@ -116,7 +120,7 @@ alert("2" + "2")  //22
 // OR: 
 alert("2 plus 2 equal " + 2 + 2); //2 plus 2 equal 22
 // OR: 
-alert("2 plus 2 equal " - 2 + 2); //NaN
+alert("2 plus 2 equal " - 2 + 2); //NaN 2 plus 2 equal
 // OR: 
 alert("2" - 2 + 2); //2 (it try to changr from string to a number )
 
@@ -124,3 +128,7 @@ alert("2" - 2 + 2); //2 (it try to changr from string to a number )
 var result = "abc" + 2 * 4;
 
 console.log("result: ", result); //abc8
+
+var result = ("abc" + 2) * 4;
+
+console.log("result: ", result); //NaN
