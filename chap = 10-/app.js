@@ -95,15 +95,60 @@ if (temp > 30) {
 
 var temp = -200;
 
-if (temp > 30) {
+if (temp > 30) {    //<=
     console.log("garmi hai");
 }
-else if(temp > 25){
+else if(temp > 25){   // <=
     console.log("mosam thk hai");
 }
-else if(temp > 20){
+else if(temp > 20){    //<=
     console.log("wear a jacket while riding on a bike");
 }
-else{ //temp <= 20
+else{ //temp <= 20        //>
     console.log("wear a jacket thand hai");
 }
+
+
+// Chapter # 11 Comparision Operator always return true false same goes for logical operator
+
+//  < > =< => === ==!
+
+// arithematic operator  + - * / % (Fimiliar) OR ++i --i i++ i-- (Umfimiliar)
+
+// Ch # 13 Testing sets of condition (logical operator) @ variables k 4 posibility hoti hai 
+
+
+var userInput = 32;
+
+var weight= 310;
+var time = 7;
+
+if(weight > 300 && time < 6){
+  console.log("Come Here")
+
+}else{
+  console.log("Go Ahead") //run yeh ho raha hai
+}
+
+
+// ss 
+// unary operator ! 
+
+var isOpen = true;
+var userName = "Sana";
+var num = 0 //true
+var print = 170 //false
+
+var result = !userName;
+console.log(result); // (false) truethy value
+
+var result=  isOpen && userName;
+console.log("result: " , result); //john last mai jo truth hoga wo print kr dega ya return ker dye ga or agr jahan falsy value ho wahi ruk jaye ga and print ker dye ga.
+// first falsy hoga to false hi rahye ga 
+
+var result=  print && userName;
+console.log("result: " , result); //john
+
+var result= userName && print;
+console.log("result: " , result); //170
+
