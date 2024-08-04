@@ -1,17 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
     <title>Document</title>
 </head>
+
 <body>
     <h1>Condition Checking</h1>
 
     <!-- comparison operator -->
-     <!-- #ES5  -->
+    <!-- #ES5  -->
     <!-- <script src="app.js"></script> -->
     <!-- #ES6  -->
-    <script src="app.js" type="module"></script>
+
+
+    <img id="myImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL2-U2-ChuTauggkwXu9K6WhxJZlsZFWEbqg&s"
+        onmouseover="swapImg(event)" onmouseout="backToOriginal()">
+    <script src="app.js" type="module">
+        window.swapImg = (event) => { // even ka object pakarna hai 
+            console.log("event catch", event);
+
+            let img = document.querySelector('#myImg')
+            img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb_cHsZRbj2jhK9_WVC9ELs-u66zz-I1smbg&s"
+        }
+        window.backToOriginal = () => {
+            console.log("back To Original");
+
+            let img = document.querySelector('#myImg')
+            img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmyc4SRtcqPPJBgBEci3rzPAj-_yZU02gw_A&s"
+        }
+        
+
+
+
+
+
+
+
+
+    </script>
 </body>
+
 </html>
